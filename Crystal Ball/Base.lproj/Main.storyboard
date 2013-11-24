@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="GHViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kpV-Gz-sS8"/>
+                        <viewControllerLayoutGuide type="bottom" id="WnY-Kt-4wj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CB00001" translatesAutoresizingMaskIntoConstraints="NO" id="dSY-L0-FYc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It is decidely so." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="265" translatesAutoresizingMaskIntoConstraints="NO" id="yn3-RB-AFh">
+                                <rect key="frame" x="28" y="204" width="265" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="cLf-De-sR8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="265" id="h0M-yT-Wdg"/>
+                                    <constraint firstAttribute="width" constant="265" id="kj1-b9-ICt"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="99" id="wmn-73-fLA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WnY-Kt-4wj" firstAttribute="top" secondItem="dSY-L0-FYc" secondAttribute="bottom" id="4Ue-IG-Ab3"/>
+                            <constraint firstItem="dSY-L0-FYc" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="HGC-hb-T0t"/>
+                            <constraint firstItem="yn3-RB-AFh" firstAttribute="centerY" secondItem="dSY-L0-FYc" secondAttribute="centerY" constant="-30.5" id="eLD-jc-TDd"/>
+                            <constraint firstItem="dSY-L0-FYc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ev9-mS-jL9"/>
+                            <constraint firstItem="yn3-RB-AFh" firstAttribute="centerX" secondItem="dSY-L0-FYc" secondAttribute="centerX" constant="0.5" id="kZK-Mk-oZ4"/>
+                            <constraint firstAttribute="trailing" secondItem="dSY-L0-FYc" secondAttribute="trailing" id="p07-B6-LaU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="dSY-L0-FYc" id="zrH-RQ-m1t"/>
+                        <outlet property="predictionLabel" destination="yn3-RB-AFh" id="WoZ-hx-G6s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CB00001" width="320" height="568"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
